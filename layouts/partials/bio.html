@@ -7,6 +7,21 @@
     <img class="author-avatar" src="{{ $image.RelPermalink }}" alt="{{ $avatar_img_alt }}" width="{{ .Width }}"
         height="{{ .Height }}" />
     {{ end }}
+      <div>&nbsp;</div>
+    <div class="footer_social-icons">
+        {{- partial "socialIcons.html" site.Params.socialIcons -}}
+    </div>
     <h2 class="author-name">{{ .Site.Params.author.intro }}</h2>
-    <p class="author-bio">{{ .Site.Params.author.description }}</p>
-</div>
+   <p style="max-width: 95%; text-align: justify" class="author-bio">
+    {{ .Site.Params.author.description }}
+    Currently working as a Backend Software Engineer @<a
+      href="https://loschdigitallab.lu/"
+      style="font-weight: lighter"
+      >Losch Digital Lab</a
+    >. <br /><br />
+    Here's my
+    <a
+      href="https://drive.google.com/file/d/1zUjrJaAkKCEXNxj0PmUqopY4K04QAnby/view"
+      style="font-weight: lighter"
+        >resumé</a> for more details. Feel free to reach me out at my socials if you find something interesting, or just to say hi! 😊
+    </div>
